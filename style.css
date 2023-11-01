@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(225, 228, 228);
+    font-family: sans-serif;
+    margin: 0;
+}
+header{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: purple;
+}
+.search{
+    background-color: transparent;
+    border: 2px solid seagreen;
+    border-radius: 50px;
+    font-size: 1rem;
+    padding: 1rem;
+    color: blue;
+}
+.search::placeholder{
+    color: white;
+}
+.search:focus{
+    outline: none;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.movie{
+    width: 800px;
+    height: 500px;
+    margin: 1rem;
+    background-color: rgb(5, 84, 84);
+    box-shadow: 0 4px 5px rgba(0,0,0.0.2);
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    display: flex;
+    padding: 5px;
+}
+.movie1{
+    width: 400px;
+    height: 300px;
+    margin: 1rem;
+    background-color: rgb(5, 84, 84);
+    box-shadow: 0 4px 5px rgba(0,0,0.0.2);
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    display: flex;
+    padding: 5px;
+}
+.movie1 img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.movie1-info{
+    width: 50%;
+    height: 100%;
+    color: rgb(10, 128, 231);
+    display: flex;
+    flex-direction: column;
+   font-size: 16px;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.movie1-info h3{
+    font-size: 14px;
+    color: rgb(6, 3, 3);
+}
+.movie1-info span{
+    background-color: rgb(114, 10, 155);
+    padding: 0.25rem 0.5rem ;
+    border-radius: 3px;
+    font-weight:500px;
+}
+.movie img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.movie-info{
+    width: 50%;
+    height: 100%;
+    color: rgb(10, 128, 231);
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing:1px ;
+}
+.movie-info span{
+    background-color: rgb(114, 10, 155);
+    padding: 0.25rem 0.5rem ;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.movie-info span.green{
+    color: green;
+}
+.movie-info span.red{
+    color: red;
+}
+.movie-info span.orange{
+    color: orange;
+}
+.overview{
+    background-color: rgb(241, 22, 58);
+    color:rgb(18, 19, 19) ;
+    padding: 2rem;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform .3s ease;
+}
+.overview1{
+    background-color: rgb(241, 22, 58);
+    color:rgb(18, 19, 19) ;
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform .3s ease;
+}
+.movie1:hover .overview1{
+    transform: translateY(0);
+}
+.movie:hover .overview{
+    transform: translateY(0);
+}
